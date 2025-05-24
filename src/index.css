@@ -1,0 +1,79 @@
+/* Глобални стилови */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  /* Анимиран градиент со весели бои */
+  background: linear-gradient(135deg, #FFD700, #FF69B4, #7FFFD4);
+  background-size: 600% 600%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #333;
+}
+
+/* Анимација за градиентот */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Основни стилови за копчињата */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #FF6347;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #FF4500;
+  transform: scale(1.05);
+}
+
+/* Слика стилови - за визуелно привлечна приказ на сликите */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: 3px solid #FF6347;
+}
+
+/* Фидбек пораки */
+.feedback {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #008000;
+  font-size: 1.2rem;
+}
+
+/* Секции на почетен, игран и крај резултат екран */
+.start-screen, .game-screen, .result-screen {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Насловот – весели бои и голем фонт */
+h1 {
+  color: #FF4500;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
